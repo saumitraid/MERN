@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Teacher } from './Teacher';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -71,6 +72,18 @@ console.log(lt);
 const col2=['yellow', 'black'];
 const mcolor=[...colors,'Pink','Maroon', ...col2];
 console.log(mcolor);
+
+
+
+
+
+let t;
+t=new Teacher('Rohan', 'Btech in CSE');
+t.walk();
+t.tech();
+console.log('Name of teacher :-'+t.name);
+console.log('Degree :-'+t.degree);
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
