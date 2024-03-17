@@ -7,6 +7,8 @@ import Employee from './component/Employee';
 import Student from './component/Student';
 import Movies from './component/Movies';
 import Nav from './component/Nav';
+import User from './component/User';
+import Filter from './component/filter';
 import Four04 from './component/Four04';
 
 
@@ -19,6 +21,8 @@ function App() {
           <Route path='/' element={<Movies/>}/>
           <Route path='/student' element={<Student/>}/>
           <Route path='/emp' element={<Employee/>}/>
+          <Route path='/user/:name' element={<User/>}/>
+          <Route path='/filter' element={<Filter/>}/>
           <Route path='/*' element={<Four04/>}/>
         </Routes>
       </BrowserRouter>

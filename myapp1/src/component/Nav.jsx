@@ -12,7 +12,7 @@ const Nav = () => {
 
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mr-auto">
-                    <li className="nav-item active">
+                    <li className="nav-item">
                         <Link className="nav-link" to={'/'}>Home <span className="sr-only">(current)</span></Link>
                     </li>
                     <li className="nav-item">
@@ -21,6 +21,12 @@ const Nav = () => {
                 
                     <li className="nav-item">
                         <Link className="nav-link" to={'/emp'}>Link2</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to={'/user/Saumitra'}>User</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to={'/filter'}>Filter</Link>
                     </li>
                 </ul>
             </div>
